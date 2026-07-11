@@ -1,5 +1,44 @@
 {
   "company": "Eco-Green Tableware Manufacturing",
+  "navigation": [
+    {
+      "name": "Materials",
+      "items": [
+        {
+          "name": "Wood",
+          "id": "wood",
+          "products": ["Wooden Cutlery", "Wooden Plate", "Wooden Container", "Wooden Coffee Stirrer", "Wooden Ice Cream Stick"]
+        },
+        {
+          "name": "Bamboo",
+          "id": "bamboo",
+          "products": ["Bamboo Cutlery", "Bamboo Plate", "Bamboo Skewers", "Bamboo Coffee Stirrer", "Bamboo Straw", "Bamboo Ice Cream Stick"]
+        },
+        {
+          "name": "Sugarcane Bagasse",
+          "id": "bagasse",
+          "products": ["Bagasse Cutlery", "Bagasse Plate", "Bagasse Container"]
+        },
+        {
+          "name": "Paper",
+          "id": "paper",
+          "products": ["Paper Container", "Paper Straw"]
+        }
+      ]
+    },
+    {
+      "name": "Categories",
+      "items": [
+        { "name": "Cutlery", "id": "cutlery" },
+        { "name": "Plates & Bowls", "id": "disposable-tableware" },
+        { "name": "Food Containers", "id": "food-container" },
+        { "name": "Skewers & Picks", "id": "skewers-picks" },
+        { "name": "Stirrers", "id": "stirrers" },
+        { "name": "Straws", "id": "straws" },
+        { "name": "Ice Cream Stick", "id": "ice-cream-stick" }
+      ]
+    }
+  ],
   "categories": [
     {
       "id": "cutlery",
