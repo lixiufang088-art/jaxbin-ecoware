@@ -29,9 +29,7 @@ export default function OEMPage() {
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="aspect-[4/3] bg-slate-100 rounded-2xl overflow-hidden relative border border-slate-200">
-             <div className="absolute inset-0 flex items-center justify-center text-slate-400 italic">
-               Private Label Packaging Image
-             </div>
+             <img src="/assets/images/sections/oem.png" alt="Private label eco tableware packaging" className="w-full h-full object-cover" />
           </div>
           <div>
             <span className="text-green-600 font-bold uppercase tracking-widest text-sm mb-4 block">What can be customized</span>

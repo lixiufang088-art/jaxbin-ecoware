@@ -41,7 +41,7 @@ export default function SustainabilityPage() {
             </div>
           </div>
           <div className="aspect-square bg-slate-100 rounded-3xl overflow-hidden flex items-center justify-center border border-slate-200">
-             <div className="text-slate-400 italic">Plant-based Material Illustration</div>
+             <img src="/assets/images/sections/sustainability.png" alt="Plant-based materials" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>

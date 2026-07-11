@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Bagasse takeaway food container">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8f5ec"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0b77e"/><stop offset="1" stop-color="#c89458"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#173122" flood-opacity=".18"/></filter>
+  <pattern id="grain" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M0 20 C12 8 20 30 34 12" fill="none" stroke="#8c6338" stroke-width="2" opacity=".18"/></pattern>
+</defs>
+<rect width="1200" height="800" rx="32" fill="url(#bg)"/>
+<circle cx="1020" cy="120" r="170" fill="#cbd5b5" opacity=".35"/>
+<circle cx="120" cy="700" r="230" fill="#7f9158" opacity=".09"/>
+<g filter="url(#shadow)" transform="translate(195 130)"><path d="M125 275L210 90h585l82 185-95 325H220z" fill="#e7dfc7"/><path d="M210 90h585l75 170H135z" fill="#f7f1df"/><path d="M255 145h495l40 75H215z" fill="#fff" opacity=".6"/><path d="M220 600h562" stroke="#9c8b66" stroke-width="8" opacity=".25"/></g>
+    <g transform="translate(760 120) rotate(18)"><path d="M0 100c70-105 185-84 220-60-40 90-116 125-220 60z" fill="#7f9158"/><path d="M22 90c64-30 100-47 170-56" stroke="#fff" opacity=".55" stroke-width="8" fill="none"/></g>
+</svg>

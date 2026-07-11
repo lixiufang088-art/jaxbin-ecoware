@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Bamboo skewers and picks">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8f5ec"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0b77e"/><stop offset="1" stop-color="#c89458"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#173122" flood-opacity=".18"/></filter>
+  <pattern id="grain" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M0 20 C12 8 20 30 34 12" fill="none" stroke="#8c6338" stroke-width="2" opacity=".18"/></pattern>
+</defs>
+<rect width="1200" height="800" rx="32" fill="url(#bg)"/>
+<circle cx="1020" cy="120" r="170" fill="#cbd5b5" opacity=".35"/>
+<circle cx="120" cy="700" r="230" fill="#7f9158" opacity=".09"/>
+<g transform="rotate(-28 600 600)"><rect x="470" y="155" width="14" height="500" rx="7" fill="url(#wood)"/><path d="M470 155l7-35 7 35z" fill="#ae773c"/></g><g transform="rotate(-20 600 600)"><rect x="508" y="155" width="14" height="500" rx="7" fill="url(#wood)"/><path d="M508 155l7-35 7 35z" fill="#ae773c"/></g><g transform="rotate(-12 600 600)"><rect x="546" y="155" width="14" height="500" rx="7" fill="url(#wood)"/><path d="M546 155l7-35 7 35z" fill="#ae773c"/></g><g transform="rotate(-4 600 600)"><rect x="584" y="155" width="14" height="500" rx="7" fill="url(#wood)"/><path d="M584 155l7-35 7 35z" fill="#ae773c"/></g><g transform="rotate(4 600 600)"><rect x="622" y="155" width="14" height="500" rx="7" fill="url(#wood)"/><path d="M622 155l7-35 7 35z" fill="#ae773c"/></g><g transform="rotate(12 600 600)"><rect x="660" y="155" width="14" height="500" rx="7" fill="url(#wood)"/><path d="M660 155l7-35 7 35z" fill="#ae773c"/></g><g transform="rotate(20 600 600)"><rect x="698" y="155" width="14" height="500" rx="7" fill="url(#wood)"/><path d="M698 155l7-35 7 35z" fill="#ae773c"/></g><g transform="rotate(28 600 600)"><rect x="736" y="155" width="14" height="500" rx="7" fill="url(#wood)"/><path d="M736 155l7-35 7 35z" fill="#ae773c"/></g><ellipse cx="600" cy="650" rx="270" ry="46" fill="#20452e" opacity=".08"/>
+</svg>

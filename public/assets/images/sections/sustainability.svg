@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Plant-based material and circular design illustration">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8f5ec"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0b77e"/><stop offset="1" stop-color="#c89458"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#173122" flood-opacity=".18"/></filter>
+  <pattern id="grain" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M0 20 C12 8 20 30 34 12" fill="none" stroke="#8c6338" stroke-width="2" opacity=".18"/></pattern>
+</defs>
+<rect width="1200" height="800" rx="32" fill="url(#bg)"/>
+<circle cx="1020" cy="120" r="170" fill="#cbd5b5" opacity=".35"/>
+<circle cx="120" cy="700" r="230" fill="#7f9158" opacity=".09"/>
+<g transform="translate(270 110)" filter="url(#shadow)"><circle cx="330" cy="300" r="245" fill="#dfe8d2"/><path d="M330 505c-15-118 10-215 77-290" stroke="#20452e" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M398 235c-28-132 112-200 228-160-28 130-108 210-228 160z" fill="#557044"/><path d="M365 290c-97-104-210-43-250 55 112 69 207 52 250-55z" fill="#7f9158"/><path d="M410 222c62-38 109-73 159-119" stroke="#fff" stroke-width="10" opacity=".55" fill="none"/><path d="M334 307c-73 4-128 12-184 25" stroke="#fff" stroke-width="10" opacity=".48" fill="none"/></g>
+</svg>

@@ -44,10 +44,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="aspect-square bg-slate-100 rounded-2xl overflow-hidden relative border border-slate-200 shadow-inner">
-             {/* Placeholder for Factory Image */}
-             <div className="absolute inset-0 flex items-center justify-center text-slate-400 italic">
-               Factory Facility Image
-             </div>
+             <img src="/assets/images/sections/factory.png" alt="Jaxbin factory facility" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>

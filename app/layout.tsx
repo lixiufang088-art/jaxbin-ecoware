@@ -14,8 +14,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Navigation Bar */}
         <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold text-green-700 tracking-tight">
-              ECO<span className="text-slate-900">GREEN</span>
+            <Link href="/" className="text-2xl font-bold text-green-700 tracking-tight flex items-center gap-2">
+              <img src="/assets/images/jaxbin-logo.png" alt="Jaxbin Ecoware" className="h-10 w-auto" />
+              <span>ECO<span className="text-slate-900">GREEN</span></span>
             </Link>
             
             <div className="hidden md:flex gap-8 items-center font-medium">

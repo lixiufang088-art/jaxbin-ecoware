@@ -33,8 +33,13 @@ export default function Home() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {products.categories.map((cat) => (
+          {[
+            { id: 'cutlery', name: 'Wooden & Bamboo Cutlery', img: '/assets/images/sections/bamboo-cutlery.png' },
+            { id: 'disposable-tableware', name: 'Plates & Bowls', img: '/assets/images/sections/plates-bowls-real.png' },
+            { id: 'food-container', name: 'Food Containers', img: '/assets/images/sections/food-containers-real.png' }
+          ].map((cat) => (
             <Link key={cat.id} href={`/products/${cat.id}`} className="group relative overflow-hidden rounded-xl aspect-[4/5] bg-slate-100">
+              <img src={cat.img} alt={cat.name} className="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
               <div className="absolute bottom-0 left-0 p-8 z-20">
                 <h3 className="text-2xl font-bold text-white mb-2">{cat.name}</h3>
