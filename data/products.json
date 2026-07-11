@@ -4,118 +4,212 @@
     {
       "name": "Materials",
       "items": [
-        { "name": "Wood", "id": "wood", "products": ["Wooden Cutlery", "Wooden Plate", "Wooden Coffee Stirrer", "Wooden Ice Cream Stick"] },
-        { "name": "Bamboo", "id": "bamboo", "products": ["Bamboo Cutlery", "Bamboo Plate", "Bamboo Skewers", "Bamboo Coffee Stirrer", "Bamboo Straw", "Bamboo Ice Cream Stick"] },
-        { "name": "Sugarcane Bagasse", "id": "bagasse", "products": ["Bagasse Cutlery", "Bagasse Plate", "Bagasse Container", "Bagasse Clamshell"] },
-        { "name": "Paper", "id": "paper", "products": ["Paper Container", "Paper Straw"] }
-      ]
-    },
-    {
-      "name": "Categories",
-      "items": [
-        { "name": "Cutlery", "id": "cutlery" },
-        { "name": "Plates & Bowls", "id": "disposable-tableware" },
-        { "name": "Food Containers", "id": "food-container" },
-        { "name": "Skewers & Picks", "id": "skewers-picks" },
-        { "name": "Stirrers", "id": "stirrers" },
-        { "name": "Straws", "id": "straws" },
-        { "name": "Ice Cream Stick", "id": "ice-cream-stick" }
+        { "name": "Wood", "id": "wood", "products": ["wooden-fork", "wooden-knife", "wooden-spoon", "wooden-cutlery-set", "wooden-coffee-stirrers", "wooden-ice-cream-sticks"] },
+        { "name": "Bamboo", "id": "bamboo", "products": ["bamboo-fork", "bamboo-knife", "bamboo-spoon", "bamboo-cutlery-set", "bamboo-plate", "bamboo-skewers", "bamboo-coffee-stirrers", "bamboo-straws", "bamboo-chopsticks"] },
+        { "name": "Sugarcane Bagasse", "id": "bagasse", "products": ["bagasse-plate", "bagasse-bowl", "bagasse-clamshell", "bagasse-cutlery"] },
+        { "name": "Paper & Bioplastic", "id": "paper-cpla", "products": ["paper-food-container", "paper-straws", "cpla-cutlery"] }
       ]
     }
   ],
   "product_pool": {
     "wooden-fork": {
-      "marketing": {
-        "title": "Premium Disposable Wooden Fork",
-        "benefits": ["Splinter-free finish", "Reinforced neck for durability", "Natural brand aesthetic"],
-        "scenarios": ["Fast Casual Dining", "Tasting Events", "Foodservice Kits"]
-      },
-      "technical_specs": {
-        "material": "A-Grade Birch Wood",
-        "moisture_content": "8% - 12% (Kiln-dried)",
-        "surface_finish": "Triple-polished, Burr-free",
-        "dimensions": "140mm, 160mm, 165mm, 180mm",
-        "heat_resistance": "Up to 100°C"
-      },
-      "oem_capabilities": {
-        "customization": ["Hot-stamping Logo", "Custom Lengths", "Individual Paper Wrap"],
-        "minimum_order": "50,000 pcs for custom branding"
-      },
-      "compliance": {
-        "certifications": ["FSC (Forest Stewardship Council)", "FDA Approved", "LFGB Compliant", "BSCI Audited"],
-        "food_contact": "Safe for direct food contact"
-      },
-      "logistics": {
-        "inner_packing": "100 pcs/bag, 50 bags/carton",
-        "carton_data": "52x22x34cm, G.W. 14kg",
-        "container_loading": "900 cartons per 20GP"
-      }
+      "marketing": { "title": "Premium Grade Disposable Wooden Fork", "benefits": ["Splinter-free finish", "Reinforced structural neck", "Aromatic-free birch"], "scenarios": ["Premium Catering", "Fast Casual", "Meal Kits"] },
+      "technical_specs": { "material": "A-Grade Birch Wood", "dimensions": "160mm/165mm/180mm", "surface": "Sanding Grade 600+", "moisture": "8-12%" },
+      "material_science": "Natural birch fiber breaks down via enzymatic action within 90 days in industrial composting.",
+      "logistics_matrix": { "20GP": "900ctns", "40HQ": "2100ctns", "packing": "100x50/ctn" },
+      "qc_protocol": ["Moisture check", "Tolerance test", "Surface audit", "Strength test", "Microbial analysis"],
+      "compliance": { "certifications": ["FSC", "FDA", "BSCI"] }
     },
-    "bagasse-plate": {
-      "marketing": {
-        "title": "Heavy-Duty Sugarcane Bagasse Plate",
-        "benefits": ["Oil & Water resistant", "Sturdy & Soak-proof", "Microwave & Freezer safe"],
-        "scenarios": ["Takeaway Main Courses", "Outdoor Events", "Schools & Institutions"]
-      },
-      "technical_specs": {
-        "material": "100% Sugarcane Bagasse Fiber",
-        "color": "Natural Unbleached / Bleached White",
-        "surface_finish": "Smooth Internal, Textured External",
-        "dimensions": "6\", 7\", 9\", 10\", 12\" (Round / Square / Compartment)",
-        "thermal_limit": "-20°C to 120°C"
-      },
-      "oem_capabilities": {
-        "customization": ["Embossed Logo", "Custom Mold Development", "Retail Retail Sleeve Packaging"],
-        "minimum_order": "100,000 pcs per size"
-      },
-      "compliance": {
-        "certifications": ["BPI Certified (Compostable)", "EN13432 Compliant", "PFAS-Free Options Available", "BRC Global Standard"],
-        "end_of_life": "100% Home & Industrial Compostable"
-      },
-      "logistics": {
-        "inner_packing": "50 pcs/sleeve, 10 sleeves/carton",
-        "carton_data": "47x24x47cm, G.W. 10.5kg",
-        "container_loading": "550 cartons per 20GP"
-      }
+    "wooden-knife": {
+      "marketing": { "title": "Professional Series Birch Wood Knife", "benefits": ["Serrated edge", "Ergonomic grip", "Toxin-free"], "scenarios": ["Meat Service", "Sandwich Chains", "Catering"] },
+      "technical_specs": { "material": "A-Grade Birch Wood", "dimensions": "160mm/165mm/180mm", "edge": "Serrated", "surface": "Smooth-ground" },
+      "material_science": "High-density birch fiber returning nutrients to earth via standard aerobic decomposition.",
+      "logistics_matrix": { "20GP": "900ctns", "40HQ": "2100ctns", "packing": "100x50/ctn" },
+      "qc_protocol": ["Serration check", "Warping inspection", "Fiber integrity", "Tensile test", "Cleanliness audit"],
+      "compliance": { "certifications": ["FSC", "FDA", "BSCI"] }
+    },
+    "wooden-spoon": {
+      "marketing": { "title": "Deep-Bowl Sustainable Wooden Spoon", "benefits": ["Soup capacity", "Zero taste interference", "Smooth mouthfeel"], "scenarios": ["Soups", "Tasting Menus", "Desserts"] },
+      "technical_specs": { "material": "A-Grade Birch Wood", "dimensions": "140mm/160mm/180mm", "bowl": "Deep-molded", "surface": "Triple-buffed" },
+      "material_science": "100% cellulose composition ensures rapid biodegradation in moist soil.",
+      "logistics_matrix": { "20GP": "900ctns", "40HQ": "2100ctns", "packing": "100x50/ctn" },
+      "qc_protocol": ["Bowl depth check", "Edge audit", "Color sorting", "Heat stability", "Packing integrity"],
+      "compliance": { "certifications": ["FSC", "FDA", "BSCI"] }
+    },
+    "wooden-cutlery-set": {
+      "marketing": { "title": "Eco-Complete Wooden Cutlery Set", "benefits": ["Pre-wrapped for hygiene", "Napkin included", "Custom bundle options"], "scenarios": ["Delivery Apps", "Aviation", "Office Lunch"] },
+      "technical_specs": { "material": "Birch Wood + Recycled Paper", "set_type": "Knife/Fork/Spoon/Napkin", "wrapping": "Kraft Paper / Bio-film" },
+      "material_science": "Composite set using 100% plant-based components for unified composting.",
+      "logistics_matrix": { "20GP": "600ctns", "40HQ": "1450ctns", "packing": "250 sets/ctn" },
+      "qc_protocol": ["Set completeness", "Sleeve alignment", "Napkin absorption", "Moisture verify", "Seal strength"],
+      "compliance": { "certifications": ["FSC", "FDA", "BSCI"] }
+    },
+    "wooden-coffee-stirrers": {
+      "marketing": { "title": "Precision Birch Wood Coffee Stirrers", "benefits": ["Smooth finish", "No wood aftertaste", "Round or flat head"], "scenarios": ["Cafes", "Hotel Lounges", "Corporate Pantry"] },
+      "technical_specs": { "material": "White Birch Wood", "dimensions": "110mm/140mm/178mm/190mm", "surface": "Burnished Smooth" },
+      "material_science": "Narrow birch strips that break down rapidly due to high surface-area-to-volume ratio.",
+      "logistics_matrix": { "20GP": "1200ctns", "40HQ": "2800ctns", "packing": "1000x10/ctn" },
+      "qc_protocol": ["Straightness check", "Splinter audit", "Thickness tolerance", "Packaging count", "Dust-free check"],
+      "compliance": { "certifications": ["FSC", "FDA", "LFGB"] }
+    },
+    "wooden-ice-cream-sticks": {
+      "marketing": { "title": "Standard Birch Wood Ice Cream Sticks", "benefits": ["Precision shaping", "Food-grade safety", "Consistent quality for automated lines"], "scenarios": ["Dairy Production", "DIY Crafts", "Frozen Yogurt"] },
+      "technical_specs": { "material": "Natural Birch Wood", "dimensions": "93mm/114mm/125mm", "grade": "High-Precision A-Grade" },
+      "material_science": "Untreated natural wood fiber, ensuring no contamination in frozen treats.",
+      "logistics_matrix": { "20GP": "1000ctns", "40HQ": "2400ctns", "packing": "10000pcs/ctn" },
+      "qc_protocol": ["Machine compatibility", "Radius audit", "Moisture control", "Length verify", "Surface smoothness"],
+      "compliance": { "certifications": ["FSC", "FDA", "ISO9001"] }
+    },
+    "bamboo-fork": {
+      "marketing": { "title": "High-Strength Natural Bamboo Fork", "benefits": ["High tensile strength", "Premium golden grain", "Reusable potential"], "scenarios": ["Upscale Events", "Salad Bars", "Zero-Waste Kits"] },
+      "technical_specs": { "material": "Sustainable Moso Bamboo", "dimensions": "160mm/170mm", "finish": "Food-grade Carnauba Wax" },
+      "material_science": "Bamboo fiber with natural lignin binders. Biodegrades via soil moisture absorption.",
+      "logistics_matrix": { "20GP": "850ctns", "40HQ": "2000ctns", "packing": "100x50/ctn" },
+      "qc_protocol": ["Lignin density", "Wax coating audit", "Point sharpness", "Grain alignment", "Durability test"],
+      "compliance": { "certifications": ["FDA", "LFGB", "ISO9001"] }
+    },
+    "bamboo-knife": {
+      "marketing": { "title": "Heavy-Duty Bamboo Serrated Knife", "benefits": ["Extreme rigidity", "Sharp cutting edge", "Moisture resistant"], "scenarios": ["Meat Service", "Steak Houses", "Premium Takeaway"] },
+      "technical_specs": { "material": "Moso Bamboo", "dimensions": "160mm/170mm", "edge": "Precision Serrated" },
+      "material_science": "Cross-laminated bamboo fibers providing superior cutting strength and heat resistance.",
+      "logistics_matrix": { "20GP": "850ctns", "40HQ": "2000ctns", "packing": "100x50/ctn" },
+      "qc_protocol": ["Cutting force test", "Structural flex", "Serration depth", "Surface finish", "Warping check"],
+      "compliance": { "certifications": ["FDA", "LFGB", "ISO9001"] }
+    },
+    "bamboo-spoon": {
+      "marketing": { "title": "Ergonomic Bamboo Serving Spoon", "benefits": ["Smooth texture", "Lightweight but strong", "Bacterial resistant properties"], "scenarios": ["Soups & Curries", "Food Courts", "Tasting Menus"] },
+      "technical_specs": { "material": "Sustainable Bamboo", "dimensions": "140mm/160mm", "finish": "Polished" },
+      "material_science": "Natural bamboo contains 'kun', a bio-agent that provides inherent resistance to bacterial growth.",
+      "logistics_matrix": { "20GP": "850ctns", "40HQ": "2000ctns", "packing": "100x50/ctn" },
+      "qc_protocol": ["Bowl symmetry", "Tactile finish", "Weight verify", "Kun agent verify", "Sterilization audit"],
+      "compliance": { "certifications": ["FDA", "LFGB", "ISO9001"] }
+    },
+    "bamboo-cutlery-set": {
+      "marketing": { "title": "Premium Bamboo Dining Set", "benefits": ["Complete meal solution", "Elegant B2B presentation", "Eco-conscious branding"], "scenarios": ["Boutique Hotels", "Organic Cafes", "Corporate Gifting"] },
+      "technical_specs": { "material": "Moso Bamboo", "contents": "Knife/Fork/Spoon/Toothpick", "pouch": "Kraft / Linen" },
+      "material_science": "A complete plant-based set that returns to the carbon cycle without plastic residue.",
+      "logistics_matrix": { "20GP": "550ctns", "40HQ": "1300ctns", "packing": "200 sets/ctn" },
+      "qc_protocol": ["Pouch cleanliness", "Toothpick safety", "Content audit", "Seal integrity", "Print quality"],
+      "compliance": { "certifications": ["FDA", "LFGB", "ISO9001"] }
+    },
+    "bamboo-plate": {
+      "marketing": { "title": "Pressed Bamboo Fiber Plate", "benefits": ["High rigidity", "Stunning natural aesthetic", "Chemical-free pressing"], "scenarios": ["Premium Events", "Grazing Boards", "Boutique Retail"] },
+      "technical_specs": { "material": "Bamboo Pulp / Fiber", "dimensions": "7\"/9\"/10\"", "process": "Heat-pressed" },
+      "material_science": "High-heat compression of bamboo fibers creates a water-resistant barrier without synthetic coatings.",
+      "logistics_matrix": { "20GP": "500ctns", "40HQ": "1200ctns", "packing": "50x10/ctn" },
+      "qc_protocol": ["Load bearing", "Impact resistance", "Surface smoothness", "Thickness verify", "Absorption test"],
+      "compliance": { "certifications": ["FDA", "LFGB", "OK Compost"] }
     },
     "bamboo-skewers": {
-      "marketing": {
-        "title": "Polished Natural Bamboo BBQ Skewers",
-        "benefits": ["Sharp point for easy piercing", "High tensile strength", "Eco-friendly BBQ alternative"],
-        "scenarios": ["Grilling & BBQ", "Fruit Kebabs", "Cocktail Appetizers"]
-      },
-      "technical_specs": {
-        "material": "Moso Bamboo (Sustainable)",
-        "moisture_content": "Below 10%",
-        "surface_finish": "Machine-polished, Anti-mold treated",
-        "dimensions": "Dia 2.5mm - 5.0mm; Length 90mm - 400mm",
-        "grade": "Export Standard A-Grade"
-      },
-      "oem_capabilities": {
-        "customization": ["Custom Point Styles", "Flat / Round Options", "Printed Retail Pouch"],
-        "minimum_order": "10 cartons (Standard sizes)"
-      },
-      "compliance": {
-        "certifications": ["FDA Compliant", "ISO 9001:2015", "Phytosanitary Certificate Supported"],
-        "safety": "Formaldehyde-free, sulfur-free"
-      },
-      "logistics": {
-        "inner_packing": "100 pcs/pouch, 100 pouches/carton",
-        "carton_data": "42x32x30cm, G.W. 18kg",
-        "palletizing": "Custom pallet layout available"
-      }
+      "marketing": { "title": "Polished Natural Bamboo BBQ Skewers", "benefits": ["Extra-sharp point", "No splinters", "High tensile strength"], "scenarios": ["Grilling & BBQ", "Fruit Kebabs", "Appetizers"] },
+      "technical_specs": { "material": "Moso Bamboo", "dimensions": "Dia 2.5-5.0mm; L 90-400mm", "grade": "A-Grade" },
+      "material_science": "Bamboo grass fiber biodegrades through microbial action within one season.",
+      "logistics_matrix": { "20GP": "1000ctns", "40HQ": "2400ctns", "packing": "100x100/ctn" },
+      "qc_protocol": ["Sharpness test", "Burr audit", "Straightness check", "Moisture control", "Fumigation audit"],
+      "compliance": { "certifications": ["FDA", "ISO9001"] }
+    },
+    "bamboo-coffee-stirrers": {
+      "marketing": { "title": "Sleek Bamboo Beverage Stirrers", "benefits": ["Sturdy stirring", "Naturally heat resistant", "Sustainable aesthetic"], "scenarios": ["Luxury Cafes", "Hot Beverage Stations", "Retail Packs"] },
+      "technical_specs": { "material": "White Bamboo", "dimensions": "110mm/140mm/190mm", "finish": "Triple-buffed" },
+      "material_science": "Low carbon footprint stirrers that decompose 50% faster than birch counterparts.",
+      "logistics_matrix": { "20GP": "1100ctns", "40HQ": "2600ctns", "packing": "1000x10/ctn" },
+      "qc_protocol": ["Width consistency", "Length verify", "Flex audit", "Dust removal", "Color matching"],
+      "compliance": { "certifications": ["FDA", "LFGB", "FSC"] }
+    },
+    "bamboo-straws": {
+      "marketing": { "title": "Reusable & Disposable Bamboo Straws", "benefits": ["Natural mouthfeel", "Durable in liquids", "Plastic-free ocean friendly"], "scenarios": ["Cocktail Bars", "Smoothie Shops", "Zero-Waste Gifting"] },
+      "technical_specs": { "material": "Natural Bamboo Tube", "dimensions": "Dia 6-12mm; L 140-240mm", "cleaning": "UV Sanitized" },
+      "material_science": "Natural hollow stems providing the ultimate structural alternative to plastic straws.",
+      "logistics_matrix": { "20GP": "900ctns", "40HQ": "2100ctns", "packing": "100x50/ctn" },
+      "qc_protocol": ["Diameter sort", "Airflow check", "UV verification", "Wall thickness", "Point safety"],
+      "compliance": { "certifications": ["FDA", "LFGB", "REACH"] }
+    },
+    "bamboo-chopsticks": {
+      "marketing": { "title": "Premium Polished Bamboo Chopsticks", "benefits": ["Splinter-free tips", "Easy separation", "Individually wrapped options"], "scenarios": ["Asian Cuisine", "Takeaway Sushi", "Hospitality"] },
+      "technical_specs": { "material": "Carbonized / Natural Bamboo", "length": "210mm/240mm", "type": "Tensogo / Genroku" },
+      "material_science": "Heat-treated (carbonized) bamboo offers enhanced durability and a dark, premium aesthetic.",
+      "logistics_matrix": { "20GP": "700ctns", "40HQ": "1650ctns", "packing": "100pairsx30/ctn" },
+      "qc_protocol": ["Separation force", "Tip alignment", "Splinter check", "Moisture verify", "Wrapper print"],
+      "compliance": { "certifications": ["FDA", "LFGB", "ISO9001"] }
+    },
+    "bagasse-plate": {
+      "marketing": { "title": "Heavy-Duty Sugarcane Bagasse Plate", "benefits": ["Oil & Water resistant", "Microwave safe", "Plastic-free lining"], "scenarios": ["Luncheons", "Festivals", "Foodservice"] },
+      "technical_specs": { "material": "Sugarcane Fiber", "dimensions": "6\"/7\"/9\"/10\"", "color": "Natural/White" },
+      "material_science": "High-density cellulose network undergoing rapid anaerobic digestion in composting.",
+      "logistics_matrix": { "20GP": "550ctns", "40HQ": "1300ctns", "packing": "50x10/ctn" },
+      "qc_protocol": ["Soak test", "Edge smoothness", "Grammage verify", "Heat stability", "Contaminant screen"],
+      "compliance": { "certifications": ["BPI", "EN13432", "PFAS-Free"] }
+    },
+    "bagasse-bowl": {
+      "marketing": { "title": "Rigid Sugarcane Soup & Salad Bowls", "benefits": ["Leak-proof design", "High stackability", "Eco-modern aesthetic"], "scenarios": ["Soup Bars", "Poke Shops", "Catering Salads"] },
+      "technical_specs": { "material": "Bagasse Pulp", "volume": "8oz/12oz/16oz/24oz/32oz", "rim": "Reinforced" },
+      "material_science": "Molded fiber construction optimized for liquid retention without deformation.",
+      "logistics_matrix": { "20GP": "450ctns", "40HQ": "1050ctns", "packing": "50x10/ctn" },
+      "qc_protocol": ["Volume accuracy", "Rim integrity", "Bottom thickness", "Liquid soak test", "Stacking test"],
+      "compliance": { "certifications": ["BPI", "EN13432", "PFAS-Free"] }
+    },
+    "bagasse-clamshell": {
+      "marketing": { "title": "Eco-Hinged Sugarcane Takeaway Box", "benefits": ["Secure locking mechanism", "Vented for crispiness", "Grease-proof"], "scenarios": ["Burger Shops", "Lunch Boxes", "Street Food"] },
+      "technical_specs": { "material": "100% Bagasse", "size": "6x6\" / 9x6\" / 8x8\" / 9x9\"", "compartment": "1/2/3 options" },
+      "material_science": "Integrated hinge design eliminates the need for separate lids, reducing material waste.",
+      "logistics_matrix": { "20GP": "350ctns", "40HQ": "850ctns", "packing": "50x4/ctn" },
+      "qc_protocol": ["Hinge cycle test", "Lock engagement", "Vapor escape audit", "Compression test", "PFAS-free audit"],
+      "compliance": { "certifications": ["BPI", "EN13432", "BRC"] }
+    },
+    "bagasse-cutlery": {
+      "marketing": { "title": "Next-Gen Compostable Bagasse Cutlery", "benefits": ["Soft-touch feel", "100% plant byproduct", "Sturdier than paper"], "scenarios": ["Institutional Dining", "Eco-Events", "Zero-Waste Cafes"] },
+      "technical_specs": { "material": "High-Density Bagasse Pulp", "dimensions": "150mm/160mm", "type": "Fork/Spoon/Knife" },
+      "material_science": "Engineered pulp compression creating a unique fibrous texture with surprisingly high flexural modulus.",
+      "logistics_matrix": { "20GP": "800ctns", "40HQ": "1900ctns", "packing": "100x20/ctn" },
+      "qc_protocol": ["Bending strength", "Fiber bonding", "Mouthfeel audit", "Dimensions check", "Hot liquid test"],
+      "compliance": { "certifications": ["BPI", "OK Compost Home", "LFGB"] }
+    },
+    "paper-food-container": {
+      "marketing": { "title": "Kraft Paper Insulated Food Bowls", "benefits": ["Double-wall insulation", "Custom full-wrap printing", "Recyclable board"], "scenarios": ["Hot Soups", "Ice Cream", "Noodle Boxes"] },
+      "technical_specs": { "material": "FSC Kraft Paper", "lining": "PE / PLA / Water-based", "size": "8oz to 48oz" },
+      "material_science": "Virgin kraft fibers provide superior thermal insulation and high burst strength.",
+      "logistics_matrix": { "20GP": "400ctns", "40HQ": "950ctns", "packing": "50x10/ctn" },
+      "qc_protocol": ["Leakage audit", "Lining adhesion", "Burst strength", "Print alignment", "Lid fit test"],
+      "compliance": { "certifications": ["FSC", "FDA", "ISO14001"] }
+    },
+    "paper-straws": {
+      "marketing": { "title": "Multi-Layer Non-Soggy Paper Straws", "benefits": ["4-hour stay-firm guarantee", "Food-grade glue", "Non-toxic inks"], "scenarios": ["Smoothie Bars", "Cocktail Service", "Retail Multipacks"] },
+      "technical_specs": { "material": "3-4 Layer Virgin Paper", "dimensions": "6mm/8mm/10mm/12mm", "inks": "Soy-based" },
+      "material_science": "Advanced winding technology using high-wet-strength paper to prevent premature softening.",
+      "logistics_matrix": { "20GP": "1200ctns", "40HQ": "2800ctns", "packing": "100x100/ctn" },
+      "qc_protocol": ["Soggy time test", "Ply adhesion", "Diameter verify", "Ink migration test", "Smooth cut audit"],
+      "compliance": { "certifications": ["FSC", "FDA", "LFGB"] }
+    },
+    "cpla-cutlery": {
+      "marketing": { "title": "Heat-Resistant Plant-Based CPLA Cutlery", "benefits": ["Traditional plastic feel", "High heat tolerance (90C)", "Premium durability"], "scenarios": ["Hot Meal Delivery", "Schools", "Catering"] },
+      "technical_specs": { "material": "Crystallized PLA (Corn Starch)", "dimensions": "160mm/170mm", "color": "White/Black/Custom" },
+      "material_science": "Fermented plant starch molecules crystallized to increase thermal stability beyond standard PLA.",
+      "logistics_matrix": { "20GP": "900ctns", "40HQ": "2100ctns", "packing": "100x10/ctn" },
+      "qc_protocol": ["Crystallization verify", "Heat deflection", "Impact strength", "Length tolerance", "Heavy metal screen"],
+      "compliance": { "certifications": ["BPI", "EN13432", "FDA"] }
+    },
+    "cocktail-picks": {
+      "marketing": { "title": "Decorative Bamboo Cocktail & Party Picks", "benefits": ["Artisan hand-crafted tops", "Sharp tips", "Biodegradable decor"], "scenarios": ["Mixology Bars", "Canape Service", "Wedding Parties"] },
+      "technical_specs": { "material": "Natural Bamboo", "styles": "Knot / Bead / Heart / Looped", "length": "90mm/120mm" },
+      "material_science": "Flexible bamboo strips woven or knotted by hand, utilizing the plant's natural elasticity.",
+      "logistics_matrix": { "20GP": "1500ctns", "40HQ": "3500ctns", "packing": "1000x20/ctn" },
+      "qc_protocol": ["Knot security", "Tip sharpness", "Color consistency", "Count verify", "Fumigation audit"],
+      "compliance": { "certifications": ["FDA", "LFGB"] }
+    },
+    "knotted-picks": {
+      "marketing": { "title": "Hand-Knotted Bamboo Skewers", "benefits": ["Elegant presentation", "Splinter-free handle", "Multiple lengths available"], "scenarios": ["Burgers", "Appetizers", "Bento Boxes"] },
+      "technical_specs": { "material": "Sustainable Bamboo", "length": "60mm/90mm/120mm/150mm/180mm", "color": "Natural Green/Yellow" },
+      "material_science": "Utilizes the outer green skin of the bamboo for maximum strength and aesthetic appeal.",
+      "logistics_matrix": { "20GP": "1400ctns", "40HQ": "3200ctns", "packing": "100x100/ctn" },
+      "qc_protocol": ["Skin integrity", "Knot tightness", "Taper audit", "Color sorting", "Bundling verify"],
+      "compliance": { "certifications": ["FDA", "LFGB"] }
     }
   },
   "categories": [
-    {
-      "id": "cutlery",
-      "name": "Cutlery",
-      "products": ["wooden-fork", "wooden-knife", "wooden-spoon", "bamboo-fork", "bagasse-cutlery", "cpla-cutlery"]
-    },
-    {
-      "id": "disposable-tableware",
-      "name": "Plates & Bowls",
-      "products": ["bagasse-plate", "bagasse-bowl", "wooden-plate", "bamboo-plate"]
-    }
+    { "id": "cutlery", "name": "Professional Cutlery", "products": ["wooden-fork", "wooden-knife", "wooden-spoon", "wooden-cutlery-set", "bamboo-fork", "bamboo-knife", "bamboo-spoon", "bamboo-cutlery-set", "bagasse-cutlery", "cpla-cutlery"] },
+    { "id": "disposable-tableware", "name": "Plates & Serving", "products": ["bagasse-plate", "bagasse-bowl", "bagasse-clamshell", "wooden-plate", "bamboo-plate"] },
+    { "id": "skewers-picks", "name": "Skewers & Picks", "products": ["bamboo-skewers", "cocktail-picks", "knotted-picks", "bamboo-chopsticks"] },
+    { "id": "stirrers", "name": "Stirrers & Sticks", "products": ["wooden-coffee-stirrers", "bamboo-coffee-stirrers", "wooden-ice-cream-sticks"] },
+    { "id": "straws", "name": "Straws & Containers", "products": ["paper-straws", "bamboo-straws", "paper-food-container"] }
   ]
 }
