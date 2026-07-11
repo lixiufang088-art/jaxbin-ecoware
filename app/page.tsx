@@ -25,6 +25,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Stats Section */}
+      <section className="bg-green-700 text-white py-12">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <p className="text-4xl font-bold mb-2">8,000 m²</p>
+            <p className="text-green-100 text-sm">Processing Facility</p>
+          </div>
+          <div>
+            <p className="text-4xl font-bold mb-2">5 Materials</p>
+            <p className="text-green-100 text-sm">Eco-friendly Selection</p>
+          </div>
+          <div>
+            <p className="text-4xl font-bold mb-2">OEM/ODM</p>
+            <p className="text-green-100 text-sm">Custom Packaging</p>
+          </div>
+          <div>
+            <p className="text-4xl font-bold mb-2">Global</p>
+            <p className="text-green-100 text-sm">Export Logistics</p>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Categories */}
       <section className="py-20 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16">
@@ -34,9 +56,13 @@ export default function Home() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { id: 'cutlery', name: 'Wooden & Bamboo Cutlery', img: '/assets/images/sections/bamboo-cutlery.png' },
+            { id: 'cutlery', name: 'Wooden & Bamboo Cutlery', img: '/assets/images/sections/cutlery.png' },
             { id: 'disposable-tableware', name: 'Plates & Bowls', img: '/assets/images/sections/plates-bowls-real.png' },
-            { id: 'food-container', name: 'Food Containers', img: '/assets/images/sections/food-containers-real.png' }
+            { id: 'food-container', name: 'Food Containers', img: '/assets/images/sections/food-containers-real.png' },
+            { id: 'skewers-picks', name: 'Skewers & Picks', img: '/assets/images/sections/skewers-picks-real.png' },
+            { id: 'stirrers', name: 'Stirrers & Sticks', img: '/assets/images/sections/stirrers-sticks-real.png' },
+            { id: 'straws', name: 'Eco Straws', img: '/assets/images/sections/straws-real.png' },
+            { id: 'ice-cream-stick', name: 'Ice Cream Sticks', img: '/assets/images/sections/sticks.png' }
           ].map((cat) => (
             <Link key={cat.id} href={`/products/${cat.id}`} className="group relative overflow-hidden rounded-xl aspect-[4/5] bg-slate-100">
               <img src={cat.img} alt={cat.name} className="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" />

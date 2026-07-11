@@ -51,7 +51,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             <div key={idx} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start border-b border-slate-100 pb-32 last:border-0 last:pb-0">
               <div className="aspect-square bg-slate-50 rounded-3xl overflow-hidden flex items-center justify-center border border-slate-100 shadow-inner group relative">
                 <img 
-                  src={categoryImage} 
+                  src={getProductImage(item.name)} 
                   alt={item.name} 
                   className="absolute inset-0 w-full h-full object-cover opacity-90 transition duration-700 group-hover:scale-110 group-hover:opacity-100" 
                 />
