@@ -1,0 +1,73 @@
+{
+  "company": "Eco-Green Tableware Manufacturing",
+  "categories": [
+    {
+      "id": "cutlery",
+      "name": "Cutlery",
+      "slug": "eco-friendly-cutlery",
+      "items": [
+        {"name": "Wooden Cutlery", "desc": "Premium birch wood spoons, forks, and knives."},
+        {"name": "Bamboo Cutlery", "desc": "Durable and reusable bamboo utensils."},
+        {"name": "Bagasse Cutlery", "desc": "100% compostable sugarcane fiber utensils."}
+      ]
+    },
+    {
+      "id": "disposable-tableware",
+      "name": "Disposable Tableware",
+      "slug": "biodegradable-plates",
+      "items": [
+        {"name": "Wooden Plate", "desc": "Natural wood grain texture for premium events."},
+        {"name": "Bamboo Plate", "desc": "Lightweight and heavy-duty bamboo fiber plates."},
+        {"name": "Bagasse Plate", "desc": "Sugarcane pulp plates, oil and water resistant."}
+      ]
+    },
+    {
+      "id": "food-container",
+      "name": "Food Container",
+      "slug": "sustainable-food-packaging",
+      "items": [
+        {"name": "Wooden Container", "desc": "Eco-friendly wooden lunch boxes."},
+        {"name": "Bagasse Container", "desc": "Microwavable sugarcane take-out containers."},
+        {"name": "Paper Container", "desc": "Recyclable paper salad bowls and soup cups."}
+      ]
+    },
+    {
+      "id": "skewers-picks",
+      "name": "Skewers & Picks",
+      "slug": "bamboo-skewers-picks",
+      "items": [
+        {"name": "Bamboo Skewers", "desc": "High-quality bamboo sticks for BBQ and grilling."},
+        {"name": "Cocktail Sticks", "desc": "Decorative picks for parties and catering."},
+        {"name": "BBQ Skewer", "desc": "Heavy-duty bamboo BBQ sticks."},
+        {"name": "Knotted Picks", "desc": "Elegant bamboo knotted picks for appetizers."}
+      ]
+    },
+    {
+      "id": "stirrers",
+      "name": "Stirrers",
+      "slug": "coffee-stirrers",
+      "items": [
+        {"name": "Bamboo Coffee Stirrer", "desc": "Smooth finish bamboo stir sticks."},
+        {"name": "Wooden Coffee Stirrer", "desc": "Standard birch wood stirrers for hot drinks."}
+      ]
+    },
+    {
+      "id": "straws",
+      "name": "Straws",
+      "slug": "eco-straws",
+      "items": [
+        {"name": "Paper Straw", "desc": "Durable multi-layer paper straws."},
+        {"name": "Bamboo Straw", "desc": "Natural bamboo straws for cold beverages."}
+      ]
+    },
+    {
+      "id": "ice-cream-stick",
+      "name": "Ice Cream Stick",
+      "slug": "wooden-ice-cream-sticks",
+      "items": [
+        {"name": "Bamboo Ice Cream Stick", "desc": "Eco-friendly bamboo sticks for frozen treats."},
+        {"name": "Wooden Ice Cream Stick", "desc": "Standard birch wood ice cream sticks."}
+      ]
+    }
+  ]
+}

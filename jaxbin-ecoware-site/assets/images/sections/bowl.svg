@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Plant fiber bowl">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8f5ec"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0b77e"/><stop offset="1" stop-color="#c89458"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#173122" flood-opacity=".18"/></filter>
+  <pattern id="grain" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M0 20 C12 8 20 30 34 12" fill="none" stroke="#8c6338" stroke-width="2" opacity=".18"/></pattern>
+</defs>
+<rect width="1200" height="800" rx="32" fill="url(#bg)"/>
+<circle cx="1020" cy="120" r="170" fill="#cbd5b5" opacity=".35"/>
+<circle cx="120" cy="700" r="230" fill="#7f9158" opacity=".09"/>
+<g filter="url(#shadow)"><ellipse cx="600" cy="345" rx="325" ry="140" fill="#f5eedb"/><path d="M275 345c30 290 165 360 325 360s295-70 325-360c-120 80-530 80-650 0z" fill="#e7dfc7"/><ellipse cx="600" cy="345" rx="250" ry="88" fill="#fff" opacity=".55"/><path d="M350 460c120 82 380 85 500 0" stroke="#b6a98a" stroke-width="6" opacity=".25" fill="none"/></g>
+</svg>

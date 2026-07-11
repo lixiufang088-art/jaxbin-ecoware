@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jaxbin.com/sitemap.xml

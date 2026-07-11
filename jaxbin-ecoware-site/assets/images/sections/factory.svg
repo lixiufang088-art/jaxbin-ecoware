@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Jaxbin processing and packing facility illustration">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8f5ec"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0b77e"/><stop offset="1" stop-color="#c89458"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#173122" flood-opacity=".18"/></filter>
+  <pattern id="grain" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M0 20 C12 8 20 30 34 12" fill="none" stroke="#8c6338" stroke-width="2" opacity=".18"/></pattern>
+</defs>
+<rect width="1200" height="800" rx="32" fill="url(#bg)"/>
+<circle cx="1020" cy="120" r="170" fill="#cbd5b5" opacity=".35"/>
+<circle cx="120" cy="700" r="230" fill="#7f9158" opacity=".09"/>
+<g filter="url(#shadow)" transform="translate(135 180)"><rect x="0" y="160" width="930" height="370" rx="18" fill="#e9ece5"/><path d="M0 160L180 35l170 125L520 35l170 125L860 35l70 125z" fill="#d8ded2"/><rect x="70" y="230" width="210" height="300" fill="#557044"/><rect x="350" y="230" width="250" height="170" fill="#b9c6b1"/><rect x="650" y="230" width="210" height="300" fill="#20452e"/><g fill="#fff" opacity=".68"><rect x="382" y="260" width="70" height="65"/><rect x="480" y="260" width="70" height="65"/><rect x="382" y="350" width="70" height="65"/><rect x="480" y="350" width="70" height="65"/></g><rect x="120" y="315" width="110" height="215" fill="#d7b57a"/><rect x="700" y="315" width="110" height="215" fill="#d7b57a"/></g>
+    <g transform="translate(850 95)"><path d="M0 125c60-95 160-88 205-55-28 80-100 125-205 55z" fill="#7f9158"/><path d="M25 110c62-28 100-42 155-45" stroke="#fff" stroke-width="7" opacity=".5" fill="none"/></g>
+</svg>

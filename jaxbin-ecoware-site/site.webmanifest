@@ -1,0 +1,20 @@
+{
+  "name": "Jaxbin Ecoware",
+  "short_name": "Jaxbin",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8f5ec",
+  "theme_color": "#20452e",
+  "icons": [
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
