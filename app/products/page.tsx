@@ -25,7 +25,7 @@ export default function ProductsPage() {
             </div>
             <div className="p-8">
               <ul className="space-y-3 mb-10">
-                {cat.products.slice(0, 4).map((pId) => {
+                {(cat.products || []).slice(0, 4).map((pId) => {
                   const item = (data.product_pool as any)[pId];
                   return (
                     <li key={pId} className="flex items-center text-sm font-bold text-slate-500 group-hover:text-green-600 transition-colors">
