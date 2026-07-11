@@ -6,9 +6,36 @@
       "name": "Cutlery",
       "slug": "eco-friendly-cutlery",
       "items": [
-        {"name": "Wooden Cutlery", "desc": "Premium birch wood spoons, forks, and knives."},
-        {"name": "Bamboo Cutlery", "desc": "Durable and reusable bamboo utensils."},
-        {"name": "Bagasse Cutlery", "desc": "100% compostable sugarcane fiber utensils."}
+        {
+          "name": "Wooden Cutlery",
+          "desc": "Premium birch wood spoons, forks, and knives.",
+          "specs": {
+            "material": "Birch wood",
+            "size": "140–180 mm",
+            "packing": "Bulk, paper sleeve or custom retail pack",
+            "moq": "Discuss by size and packing"
+          }
+        },
+        {
+          "name": "Bamboo Cutlery",
+          "desc": "Durable and reusable bamboo utensils.",
+          "specs": {
+            "material": "Bamboo",
+            "size": "160–200 mm",
+            "packing": "Bulk, wrapped set or retail kit",
+            "moq": "MOQ varies by customization"
+          }
+        },
+        {
+          "name": "Bagasse Cutlery",
+          "desc": "100% compostable sugarcane fiber utensils.",
+          "specs": {
+            "material": "Sugarcane bagasse fiber",
+            "size": "150–170 mm",
+            "packing": "Bulk or kraft bag",
+            "moq": "Discuss by material availability"
+          }
+        }
       ]
     },
     {
@@ -16,9 +43,36 @@
       "name": "Disposable Tableware",
       "slug": "biodegradable-plates",
       "items": [
-        {"name": "Wooden Plate", "desc": "Natural wood grain texture for premium events."},
-        {"name": "Bamboo Plate", "desc": "Lightweight and heavy-duty bamboo fiber plates."},
-        {"name": "Bagasse Plate", "desc": "Sugarcane pulp plates, oil and water resistant."}
+        {
+          "name": "Wooden Plate",
+          "desc": "Natural wood grain texture for premium events.",
+          "specs": {
+            "material": "Poplar or birch wood",
+            "size": "6–10 inch",
+            "packing": "Shrink wrap or bulk",
+            "moq": "Depends on diameter"
+          }
+        },
+        {
+          "name": "Bamboo Plate",
+          "desc": "Lightweight and heavy-duty bamboo fiber plates.",
+          "specs": {
+            "material": "Bamboo fiber/pulp",
+            "size": "7–12 inch",
+            "packing": "Retail sleeve or bulk",
+            "moq": "MOQ by plate shape"
+          }
+        },
+        {
+          "name": "Bagasse Plate",
+          "desc": "Sugarcane pulp plates, oil and water resistant.",
+          "specs": {
+            "material": "Sugarcane bagasse fiber",
+            "size": "6–12 inch, round or compartment",
+            "packing": "Shrink, bag or retail pack",
+            "moq": "Discuss by mold and pack"
+          }
+        }
       ]
     },
     {
@@ -26,9 +80,36 @@
       "name": "Food Container",
       "slug": "sustainable-food-packaging",
       "items": [
-        {"name": "Wooden Container", "desc": "Eco-friendly wooden lunch boxes."},
-        {"name": "Bagasse Container", "desc": "Microwavable sugarcane take-out containers."},
-        {"name": "Paper Container", "desc": "Recyclable paper salad bowls and soup cups."}
+        {
+          "name": "Wooden Container",
+          "desc": "Eco-friendly wooden lunch boxes.",
+          "specs": {
+            "material": "Natural wood",
+            "size": "Various volumes (500ml–1200ml)",
+            "packing": "Stacked in cartons",
+            "moq": "Custom size available"
+          }
+        },
+        {
+          "name": "Bagasse Container",
+          "desc": "Microwavable sugarcane take-out containers.",
+          "specs": {
+            "material": "Bagasse fiber",
+            "size": "Hinged clamshell or bowl styles",
+            "packing": "Bulk export carton",
+            "moq": "Discuss by mold"
+          }
+        },
+        {
+          "name": "Paper Container",
+          "desc": "Recyclable paper salad bowls and soup cups.",
+          "specs": {
+            "material": "Kraft or PE-lined paper",
+            "size": "8oz–48oz",
+            "packing": "Sleeved in carton",
+            "moq": "Custom printing supported"
+          }
+        }
       ]
     },
     {
@@ -36,10 +117,46 @@
       "name": "Skewers & Picks",
       "slug": "bamboo-skewers-picks",
       "items": [
-        {"name": "Bamboo Skewers", "desc": "High-quality bamboo sticks for BBQ and grilling."},
-        {"name": "Cocktail Sticks", "desc": "Decorative picks for parties and catering."},
-        {"name": "BBQ Skewer", "desc": "Heavy-duty bamboo BBQ sticks."},
-        {"name": "Knotted Picks", "desc": "Elegant bamboo knotted picks for appetizers."}
+        {
+          "name": "Bamboo Skewers",
+          "desc": "High-quality bamboo sticks for BBQ and grilling.",
+          "specs": {
+            "material": "Bamboo",
+            "size": "90–400 mm; round/flat",
+            "packing": "Bulk or retail pouch",
+            "moq": "Discuss by diameter/length"
+          }
+        },
+        {
+          "name": "Cocktail Sticks",
+          "desc": "Decorative picks for parties and catering.",
+          "specs": {
+            "material": "Bamboo/Wood",
+            "size": "65–120 mm",
+            "packing": "Wholesale box",
+            "moq": "Stock availability depends"
+          }
+        },
+        {
+          "name": "BBQ Skewer",
+          "desc": "Heavy-duty bamboo BBQ sticks.",
+          "specs": {
+            "material": "Moso bamboo",
+            "size": "Various lengths",
+            "packing": "Polybag + carton",
+            "moq": "Bulk only"
+          }
+        },
+        {
+          "name": "Knotted Picks",
+          "desc": "Elegant bamboo knotted picks for appetizers.",
+          "specs": {
+            "material": "Bamboo",
+            "size": "90mm, 120mm, 150mm",
+            "packing": "100pcs/bag or bulk",
+            "moq": "Carton quantities"
+          }
+        }
       ]
     },
     {
@@ -47,8 +164,26 @@
       "name": "Stirrers",
       "slug": "coffee-stirrers",
       "items": [
-        {"name": "Bamboo Coffee Stirrer", "desc": "Smooth finish bamboo stir sticks."},
-        {"name": "Wooden Coffee Stirrer", "desc": "Standard birch wood stirrers for hot drinks."}
+        {
+          "name": "Bamboo Coffee Stirrer",
+          "desc": "Smooth finish bamboo stir sticks.",
+          "specs": {
+            "material": "Bamboo",
+            "size": "110–190 mm",
+            "packing": "Bulk or paper wrap",
+            "moq": "Custom length supported"
+          }
+        },
+        {
+          "name": "Wooden Coffee Stirrer",
+          "desc": "Standard birch wood stirrers for hot drinks.",
+          "specs": {
+            "material": "Birch wood",
+            "size": "110mm, 140mm, 178mm, 190mm",
+            "packing": "Bulk, sachet or dispenser box",
+            "moq": "Export carton counts"
+          }
+        }
       ]
     },
     {
@@ -56,8 +191,26 @@
       "name": "Straws",
       "slug": "eco-straws",
       "items": [
-        {"name": "Paper Straw", "desc": "Durable multi-layer paper straws."},
-        {"name": "Bamboo Straw", "desc": "Natural bamboo straws for cold beverages."}
+        {
+          "name": "Paper Straw",
+          "desc": "Durable multi-layer paper straws.",
+          "specs": {
+            "material": "Food-grade paper",
+            "size": "6mm, 8mm, 10mm, 12mm",
+            "packing": "Wrapped or box",
+            "moq": "Custom patterns allowed"
+          }
+        },
+        {
+          "name": "Bamboo Straw",
+          "desc": "Natural bamboo straws for cold beverages.",
+          "specs": {
+            "material": "Natural bamboo",
+            "size": "14cm–24cm",
+            "packing": "Bulk or brush kits",
+            "moq": "Discuss by diameter"
+          }
+        }
       ]
     },
     {
@@ -65,8 +218,26 @@
       "name": "Ice Cream Stick",
       "slug": "wooden-ice-cream-sticks",
       "items": [
-        {"name": "Bamboo Ice Cream Stick", "desc": "Eco-friendly bamboo sticks for frozen treats."},
-        {"name": "Wooden Ice Cream Stick", "desc": "Standard birch wood ice cream sticks."}
+        {
+          "name": "Bamboo Ice Cream Stick",
+          "desc": "Eco-friendly bamboo sticks for frozen treats.",
+          "specs": {
+            "material": "Bamboo",
+            "size": "Standard/Custom",
+            "packing": "Bulk bundles",
+            "moq": "High volume"
+          }
+        },
+        {
+          "name": "Wooden Ice Cream Stick",
+          "desc": "Standard birch wood ice cream sticks.",
+          "specs": {
+            "material": "Birch wood",
+            "size": "93mm, 114mm, 125mm",
+            "packing": "Bundled or loose",
+            "moq": "Factory minimums apply"
+          }
+        }
       ]
     }
   ]
