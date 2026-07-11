@@ -12,18 +12,33 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
     notFound();
   }
 
-  // Image mapping for categories
-  const imageMap: Record<string, string> = {
-    'cutlery': '/assets/images/sections/bamboo-cutlery.png',
+  // Precise mapping for categories and specific items
+  const categoryImageMap: Record<string, string> = {
+    'cutlery': '/assets/images/sections/cutlery.png',
     'disposable-tableware': '/assets/images/sections/plates-bowls-real.png',
     'food-container': '/assets/images/sections/food-containers-real.png',
     'skewers-picks': '/assets/images/sections/skewers-picks-real.png',
     'stirrers': '/assets/images/sections/stirrers-sticks-real.png',
     'straws': '/assets/images/sections/straws-real.png',
-    'ice-cream-stick': '/assets/images/sections/wooden-cutlery.png'
+    'ice-cream-stick': '/assets/images/sections/sticks.png'
   };
 
-  const categoryImage = imageMap[id] || '/assets/images/sections/hero.png';
+  const itemImageMap: Record<string, string> = {
+    'Wooden Cutlery': '/assets/images/sections/wooden-cutlery.png',
+    'Bamboo Cutlery': '/assets/images/sections/bamboo-cutlery.png',
+    'Bagasse Cutlery': '/assets/images/sections/compostable-cutlery.png',
+    'Wooden Plate': '/assets/images/sections/plates.png',
+    'Bagasse Plate': '/assets/images/sections/bowl.png',
+    'Wooden Container': '/assets/images/sections/containers.png',
+    'Cocktail Sticks': '/assets/images/sections/picks.png',
+    'Knotted Picks': '/assets/images/sections/picks.png',
+    'Bamboo Coffee Stirrer': '/assets/images/sections/stirrers.png',
+    'Paper Straw': '/assets/images/sections/straws.png'
+  };
+
+  const getProductImage = (itemName: string) => {
+    return itemImageMap[itemName] || categoryImageMap[id] || '/assets/images/sections/hero.png';
+  };
 
   return (
     <div className="min-h-screen bg-white">
