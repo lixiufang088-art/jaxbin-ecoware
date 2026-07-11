@@ -41,19 +41,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </button>
                 
                 {/* Mega Menu Overlay (3-Level Architecture) */}
-                <div className="absolute top-full left-1/2 -translate-x-1/2 w-[900px] bg-white border border-slate-100 shadow-2xl rounded-2xl p-10 hidden group-hover:grid grid-cols-4 gap-10">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 w-[1000px] bg-white border border-slate-100 shadow-2xl rounded-3xl p-12 hidden group-hover:grid grid-cols-4 gap-12 border-t-4 border-t-green-600">
                   {data.navigation[0].items.map((material) => (
-                    <div key={material.id}>
-                      <p className="text-green-700 font-bold uppercase tracking-widest text-xs mb-6 border-b border-green-50 pb-2">
-                        {material.name} Based
-                      </p>
+                    <div key={material.id} className="space-y-6">
+                      <div className="flex items-center gap-3 border-b border-slate-50 pb-4">
+                        <div className="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center text-lg">
+                          {material.id === 'wood' ? '🪵' : material.id === 'bamboo' ? '🎋' : material.id === 'bagasse' ? '🌾' : '📄'}
+                        </div>
+                        <p className="text-green-700 font-bold uppercase tracking-widest text-xs">
+                          {material.name}
+                        </p>
+                      </div>
                       <ul className="space-y-3">
                         {material.products.map((product) => (
                           <li key={product}>
                             <Link 
-                              href={`/products/${data.categories.find(c => c.items.some(i => i.name === product))?.id || 'cutlery'}`} 
-                              className="text-sm text-slate-600 hover:text-green-600 hover:translate-x-1 transition-all inline-block"
+                              href={`/products/${data.categories.find(c => c.products.some(p => p === product.toLowerCase().replace(/ /g, '-')) || c.id === material.id)?.id || 'cutlery'}`} 
+                              className="text-[13px] text-slate-500 hover:text-green-600 hover:font-bold transition-all flex items-center gap-2 group/item"
                             >
+                              <span className="w-1 h-1 bg-slate-200 rounded-full group-hover/item:bg-green-600 transition-colors"></span>
                               {product}
                             </Link>
                           </li>
@@ -61,9 +67,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                       </ul>
                     </div>
                   ))}
-                  <div className="col-span-4 mt-8 pt-8 border-t border-slate-50 flex justify-between items-center bg-slate-50 -mx-10 -mb-10 p-6 rounded-b-2xl">
-                    <p className="text-slate-500 text-xs italic">Looking for specific specifications? OEM/ODM samples available upon request.</p>
-                    <Link href="/products" className="text-green-600 font-bold text-sm hover:underline">View All Range &rarr;</Link>
+                  <div className="col-span-4 mt-10 pt-10 border-t border-slate-50 flex justify-between items-center bg-slate-50 -mx-12 -mb-12 p-8 rounded-b-3xl">
+                    <div className="flex gap-8">
+                      <div className="flex items-center gap-2">
+                        <span className="text-green-600">✅</span>
+                        <span className="text-[11px] font-bold text-slate-400 uppercase tracking-tighter">FSC Certified</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-green-600">✅</span>
+                        <span className="text-[11px] font-bold text-slate-400 uppercase tracking-tighter">FDA Compliant</span>
+                      </div>
+                    </div>
+                    <Link href="/products" className="bg-green-600 text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-green-700 transition">Explore Full Catalog &rarr;</Link>
                   </div>
                 </div>
               </div>
