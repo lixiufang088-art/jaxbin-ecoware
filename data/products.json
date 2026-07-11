@@ -7,35 +7,76 @@
         {
           "name": "Wood",
           "id": "wood",
-          "products": ["Wooden Cutlery", "Wooden Plate", "Wooden Container", "Wooden Coffee Stirrer", "Wooden Ice Cream Stick"]
+          "products": [
+            "Wooden Cutlery",
+            "Wooden Plate",
+            "Wooden Container",
+            "Wooden Coffee Stirrer",
+            "Wooden Ice Cream Stick"
+          ]
         },
         {
           "name": "Bamboo",
           "id": "bamboo",
-          "products": ["Bamboo Cutlery", "Bamboo Plate", "Bamboo Skewers", "Bamboo Coffee Stirrer", "Bamboo Straw", "Bamboo Ice Cream Stick"]
+          "products": [
+            "Bamboo Cutlery",
+            "Bamboo Plate",
+            "Bamboo Skewers",
+            "Bamboo Coffee Stirrer",
+            "Bamboo Straw",
+            "Bamboo Ice Cream Stick"
+          ]
         },
         {
           "name": "Sugarcane Bagasse",
           "id": "bagasse",
-          "products": ["Bagasse Cutlery", "Bagasse Plate", "Bagasse Container"]
+          "products": [
+            "Bagasse Cutlery",
+            "Bagasse Plate",
+            "Bagasse Container"
+          ]
         },
         {
           "name": "Paper",
           "id": "paper",
-          "products": ["Paper Container", "Paper Straw"]
+          "products": [
+            "Paper Container",
+            "Paper Straw"
+          ]
         }
       ]
     },
     {
       "name": "Categories",
       "items": [
-        { "name": "Cutlery", "id": "cutlery" },
-        { "name": "Plates & Bowls", "id": "disposable-tableware" },
-        { "name": "Food Containers", "id": "food-container" },
-        { "name": "Skewers & Picks", "id": "skewers-picks" },
-        { "name": "Stirrers", "id": "stirrers" },
-        { "name": "Straws", "id": "straws" },
-        { "name": "Ice Cream Stick", "id": "ice-cream-stick" }
+        {
+          "name": "Cutlery",
+          "id": "cutlery"
+        },
+        {
+          "name": "Plates & Bowls",
+          "id": "disposable-tableware"
+        },
+        {
+          "name": "Food Containers",
+          "id": "food-container"
+        },
+        {
+          "name": "Skewers & Picks",
+          "id": "skewers-picks"
+        },
+        {
+          "name": "Stirrers",
+          "id": "stirrers"
+        },
+        {
+          "name": "Straws",
+          "id": "straws"
+        },
+        {
+          "name": "Ice Cream Stick",
+          "id": "ice-cream-stick"
+        }
       ]
     }
   ],
@@ -52,7 +93,10 @@
             "material": "Birch wood",
             "size": "140–180 mm",
             "packing": "Bulk, paper sleeve or custom retail pack",
-            "moq": "Discuss by size and packing"
+            "moq": "Discuss by size and packing",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free",
+            "coating": "Optional Food-grade Carnauba Wax"
           }
         },
         {
@@ -62,7 +106,10 @@
             "material": "Bamboo",
             "size": "160–200 mm",
             "packing": "Bulk, wrapped set or retail kit",
-            "moq": "MOQ varies by customization"
+            "moq": "MOQ varies by customization",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free",
+            "coating": "Optional Food-grade Carnauba Wax"
           }
         },
         {
@@ -89,7 +136,10 @@
             "material": "Poplar or birch wood",
             "size": "6–10 inch",
             "packing": "Shrink wrap or bulk",
-            "moq": "Depends on diameter"
+            "moq": "Depends on diameter",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free",
+            "coating": "Optional Food-grade Carnauba Wax"
           }
         },
         {
@@ -99,7 +149,9 @@
             "material": "Bamboo fiber/pulp",
             "size": "7–12 inch",
             "packing": "Retail sleeve or bulk",
-            "moq": "MOQ by plate shape"
+            "moq": "MOQ by plate shape",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free"
           }
         },
         {
@@ -126,7 +178,9 @@
             "material": "Natural wood",
             "size": "Various volumes (500ml–1200ml)",
             "packing": "Stacked in cartons",
-            "moq": "Custom size available"
+            "moq": "Custom size available",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free"
           }
         },
         {
@@ -163,7 +217,9 @@
             "material": "Bamboo",
             "size": "90–400 mm; round/flat",
             "packing": "Bulk or retail pouch",
-            "moq": "Discuss by diameter/length"
+            "moq": "Discuss by diameter/length",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free"
           }
         },
         {
@@ -173,7 +229,9 @@
             "material": "Bamboo/Wood",
             "size": "65–120 mm",
             "packing": "Wholesale box",
-            "moq": "Stock availability depends"
+            "moq": "Stock availability depends",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free"
           }
         },
         {
@@ -183,7 +241,9 @@
             "material": "Moso bamboo",
             "size": "Various lengths",
             "packing": "Polybag + carton",
-            "moq": "Bulk only"
+            "moq": "Bulk only",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free"
           }
         },
         {
@@ -193,7 +253,9 @@
             "material": "Bamboo",
             "size": "90mm, 120mm, 150mm",
             "packing": "100pcs/bag or bulk",
-            "moq": "Carton quantities"
+            "moq": "Carton quantities",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free"
           }
         }
       ]
@@ -210,7 +272,9 @@
             "material": "Bamboo",
             "size": "110–190 mm",
             "packing": "Bulk or paper wrap",
-            "moq": "Custom length supported"
+            "moq": "Custom length supported",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free"
           }
         },
         {
@@ -220,7 +284,9 @@
             "material": "Birch wood",
             "size": "110mm, 140mm, 178mm, 190mm",
             "packing": "Bulk, sachet or dispenser box",
-            "moq": "Export carton counts"
+            "moq": "Export carton counts",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free"
           }
         }
       ]
@@ -247,7 +313,9 @@
             "material": "Natural bamboo",
             "size": "14cm–24cm",
             "packing": "Bulk or brush kits",
-            "moq": "Discuss by diameter"
+            "moq": "Discuss by diameter",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free"
           }
         }
       ]
@@ -264,7 +332,9 @@
             "material": "Bamboo",
             "size": "Standard/Custom",
             "packing": "Bulk bundles",
-            "moq": "High volume"
+            "moq": "High volume",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free"
           }
         },
         {
@@ -274,7 +344,9 @@
             "material": "Birch wood",
             "size": "93mm, 114mm, 125mm",
             "packing": "Bundled or loose",
-            "moq": "Factory minimums apply"
+            "moq": "Factory minimums apply",
+            "moisture": "8% - 12% (Kiln-dried)",
+            "surface": "Triple-polished, Burr-free"
           }
         }
       ]

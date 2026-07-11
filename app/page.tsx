@@ -6,7 +6,7 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center text-white bg-slate-900">
-        <div className="absolute inset-0 opacity-40 bg-[url('https://your-r2-url.com/hero-bg.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 opacity-40 bg-[url('/assets/images/sections/hero.png')] bg-cover bg-center" />
         <div className="relative z-10 text-center px-4 max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Leading Eco-Friendly Disposable Tableware Since 2008

@@ -68,9 +68,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </div>
               </div>
 
+              <Link href="/solutions" className="text-slate-700 hover:text-green-600 transition uppercase tracking-wider text-sm border-l border-slate-100 pl-8">Solutions</Link>
               <Link href="/oem" className="text-slate-700 hover:text-green-600 transition uppercase tracking-wider text-sm">OEM Service</Link>
+              <Link href="/certificates" className="text-slate-700 hover:text-green-600 transition uppercase tracking-wider text-sm">Certificates</Link>
               <Link href="/sustainability" className="text-slate-700 hover:text-green-600 transition uppercase tracking-wider text-sm">Sustainability</Link>
-              <Link href="/about" className="text-slate-700 hover:text-green-600 transition uppercase tracking-wider text-sm">About Us</Link>
               <Link href="/contact" className="bg-green-600 text-white px-6 py-2.5 rounded-full hover:bg-green-700 transition shadow-lg shadow-green-100 text-sm">Get a Quote</Link>
             </div>
           </div>
