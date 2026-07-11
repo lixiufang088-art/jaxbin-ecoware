@@ -12,6 +12,19 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
     notFound();
   }
 
+  // Image mapping for categories
+  const imageMap: Record<string, string> = {
+    'cutlery': '/assets/images/sections/bamboo-cutlery.png',
+    'disposable-tableware': '/assets/images/sections/plates-bowls-real.png',
+    'food-container': '/assets/images/sections/food-containers-real.png',
+    'skewers-picks': '/assets/images/sections/skewers-picks-real.png',
+    'stirrers': '/assets/images/sections/stirrers-sticks-real.png',
+    'straws': '/assets/images/sections/straws-real.png',
+    'ice-cream-stick': '/assets/images/sections/wooden-cutlery.png'
+  };
+
+  const categoryImage = imageMap[id] || '/assets/images/sections/hero.png';
+
   return (
     <div className="min-h-screen bg-white">
       {/* Page Hero */}
@@ -89,19 +102,6 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
       <section className="bg-slate-900 text-white py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-12">Explore Other Sustainable Categories</h2>
-          <div className="flex flex-wrap justify-center gap-4">
-            {data.categories.filter(c => c.id !== id).map(c => (
-              <Link key={c.id} href={`/products/${c.id}`} className="px-8 py-3 bg-slate-800 border border-slate-700 rounded-full text-slate-300 hover:border-green-500 hover:text-white transition">
-                {c.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
-me="text-2xl font-bold mb-12">Explore Other Sustainable Categories</h2>
           <div className="flex flex-wrap justify-center gap-4">
             {data.categories.filter(c => c.id !== id).map(c => (
               <Link key={c.id} href={`/products/${c.id}`} className="px-8 py-3 bg-slate-800 border border-slate-700 rounded-full text-slate-300 hover:border-green-500 hover:text-white transition">
