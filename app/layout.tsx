@@ -105,15 +105,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <h4 className="text-white font-bold mb-8 uppercase tracking-widest text-xs">Solutions</h4>
               <ul className="space-y-4">
+                <li><Link href="/solutions" className="hover:text-white transition">Industry Solutions</Link></li>
                 <li><Link href="/oem" className="hover:text-white transition">OEM & Private Label</Link></li>
                 <li><Link href="/sustainability" className="hover:text-white transition">Sustainable Sourcing</Link></li>
-                <li><Link href="/about" className="hover:text-white transition">Factory Profile</Link></li>
-                <li><Link href="/contact" className="hover:text-white transition">Quality Control</Link></li>
+                <li><Link href="/certificates" className="hover:text-white transition">Certificates & Compliance</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-8 uppercase tracking-widest text-xs">Direct Inquiry</h4>
-              <p className="mb-6 leading-relaxed text-slate-500">Provide item, size, packing and quantity for a factory-direct quotation.</p>
+              <h4 className="text-white font-bold mb-8 uppercase tracking-widest text-xs">Connect</h4>
+              <p className="mb-4 text-slate-500">Processing Facility:<br/>No. 88 Eco-Industrial Park, Fujian, China</p>
+              <div className="flex gap-4 mb-8">
+                <span className="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-white cursor-pointer hover:bg-green-600 transition">in</span>
+                <span className="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-white cursor-pointer hover:bg-green-600 transition">f</span>
+                <span className="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-white cursor-pointer hover:bg-green-600 transition">t</span>
+              </div>
               <Link href="/contact" className="inline-block border border-slate-700 text-white px-6 py-3 rounded hover:bg-slate-800 transition">Start Project</Link>
             </div>
           </div>
