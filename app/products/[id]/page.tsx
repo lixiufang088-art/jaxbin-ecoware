@@ -36,10 +36,12 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
         <div className="space-y-32">
           {category.items.map((item, idx) => (
             <div key={idx} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start border-b border-slate-100 pb-32 last:border-0 last:pb-0">
-              <div className="aspect-square bg-slate-50 rounded-3xl overflow-hidden flex items-center justify-center border border-slate-100 shadow-inner group">
-                <div className="text-slate-300 italic group-hover:scale-110 transition duration-700">
-                  {item.name} Product Visual
-                </div>
+              <div className="aspect-square bg-slate-50 rounded-3xl overflow-hidden flex items-center justify-center border border-slate-100 shadow-inner group relative">
+                <img 
+                  src={categoryImage} 
+                  alt={item.name} 
+                  className="absolute inset-0 w-full h-full object-cover opacity-90 transition duration-700 group-hover:scale-110 group-hover:opacity-100" 
+                />
               </div>
               
               <div>
@@ -87,6 +89,19 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
       <section className="bg-slate-900 text-white py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-12">Explore Other Sustainable Categories</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {data.categories.filter(c => c.id !== id).map(c => (
+              <Link key={c.id} href={`/products/${c.id}`} className="px-8 py-3 bg-slate-800 border border-slate-700 rounded-full text-slate-300 hover:border-green-500 hover:text-white transition">
+                {c.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+me="text-2xl font-bold mb-12">Explore Other Sustainable Categories</h2>
           <div className="flex flex-wrap justify-center gap-4">
             {data.categories.filter(c => c.id !== id).map(c => (
               <Link key={c.id} href={`/products/${c.id}`} className="px-8 py-3 bg-slate-800 border border-slate-700 rounded-full text-slate-300 hover:border-green-500 hover:text-white transition">
