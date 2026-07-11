@@ -35,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   ))}
                 </div>
               </div>
+              <Link href="/oem" className="hover:text-green-600 transition">OEM Service</Link>
               <Link href="/about" className="hover:text-green-600 transition">About Us</Link>
               <Link href="/contact" className="bg-green-600 text-white px-5 py-2 rounded-full hover:bg-green-700 transition">Get a Quote</Link>
             </div>
