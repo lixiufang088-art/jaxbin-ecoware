@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PageHero from '@/components/PageHero';
 
 export default function CertificatesPage() {
   const certs = [
@@ -29,35 +30,26 @@ export default function CertificatesPage() {
   ];
 
   return (
-    <div className="min-h-screen">
-      {/* Page Hero */}
-      <section className="bg-slate-900 text-white py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center gap-2 text-green-400 text-sm mb-6 uppercase tracking-widest font-semibold">
-            <Link href="/" className="hover:text-white transition">Home</Link>
-            <span>/</span>
-            <span>Certificates</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Global Compliance & Quality Standards</h1>
-          <p className="text-xl text-slate-300 max-w-3xl leading-relaxed">
-            Jaxbin Ecoware maintains rigorous certifications to ensure our products meet the highest environmental, ethical, and food-safety requirements worldwide.
-          </p>
-        </div>
-      </section>
+    <div className="min-h-screen bg-white">
+      <PageHero 
+        title="Compliance & Standards"
+        subtitle="Jaxbin Ecoware maintains rigorous certifications to ensure our products meet the highest environmental, ethical, and food-safety requirements worldwide."
+        image="/assets/images/sections/hero.png"
+      />
 
       {/* Certificates Grid */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-32 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {certs.map((cert, idx) => (
-              <div key={idx} className="p-8 border border-slate-100 bg-slate-50 rounded-2xl flex gap-6 items-start">
-                <div className="w-16 h-16 bg-white shadow-sm rounded-xl flex items-center justify-center text-3xl flex-shrink-0">
+              <div key={idx} className="p-12 border border-slate-100 bg-slate-50 rounded-[40px] flex flex-col sm:flex-row gap-8 items-start hover:shadow-2xl transition-all duration-700 group">
+                <div className="w-20 h-20 bg-white shadow-xl rounded-3xl flex items-center justify-center text-4xl flex-shrink-0 group-hover:scale-110 transition-transform">
                   {cert.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-1">{cert.name}</h3>
-                  <p className="text-xs font-bold text-green-700 uppercase tracking-widest mb-4">{cert.full}</p>
-                  <p className="text-slate-600 leading-relaxed">{cert.desc}</p>
+                  <h3 className="text-h3 text-slate-900 mb-2 uppercase tracking-tighter italic">{cert.name}</h3>
+                  <p className="text-[10px] font-black text-green-700 uppercase tracking-[0.3em] mb-6">{cert.full}</p>
+                  <p className="text-slate-500 font-medium leading-relaxed">{cert.desc}</p>
                 </div>
               </div>
             ))}
@@ -66,26 +58,29 @@ export default function CertificatesPage() {
       </section>
 
       {/* Catalog Download Section */}
-      <section className="bg-slate-50 py-24 px-6 border-y border-slate-100">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12 bg-white p-12 rounded-3xl shadow-xl shadow-slate-200/50">
-          <div className="w-48 h-64 bg-slate-100 rounded-lg flex items-center justify-center text-slate-300 italic border border-slate-200">
-            Catalog Cover
+      <section className="bg-slate-950 text-white py-40 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-20 relative z-10">
+          <div className="w-64 h-[400px] bg-white/5 rounded-3xl flex items-center justify-center text-slate-700 italic border border-white/10 shadow-2xl relative overflow-hidden group">
+            <img src="/assets/images/sections/hero.png" className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000" alt="" />
+            <span className="relative z-10 font-black uppercase tracking-widest text-xs">Catalog 2026</span>
           </div>
           <div className="flex-grow text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-4 text-slate-900">Download Our Full Catalog</h2>
-            <p className="text-slate-600 mb-8 text-lg">Get access to our latest product range, material technical sheets, and export packaging data.</p>
-            <button className="bg-green-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-green-700 transition">
-              Download PDF (12MB)
+            <span className="text-green-500 font-black uppercase tracking-[0.4em] text-[10px] mb-8 block">Procurement Resources</span>
+            <h2 className="text-h2 tracking-tighter uppercase italic mb-8 leading-[0.9]">Download Our<br/>Full Catalog</h2>
+            <p className="text-2xl text-slate-400 mb-12 font-medium leading-tight">Get instant access to our 2026 product range, technical data sheets, and export packaging matrices.</p>
+            <button className="bg-green-600 text-white px-16 py-8 rounded-[40px] font-black text-2xl hover:bg-white hover:text-slate-950 transition-all shadow-2xl group uppercase tracking-widest">
+              DOWNLOAD PDF (12MB) →
             </button>
           </div>
         </div>
       </section>
 
       {/* Contact Link */}
-      <section className="py-20 text-center">
-        <p className="text-slate-500 mb-4 font-medium uppercase tracking-widest text-sm">Need specific test reports?</p>
-        <Link href="/contact" className="text-green-600 font-bold text-xl hover:underline underline-offset-8">
-          Request Compliance Documents →
+      <section className="py-40 text-center bg-white border-t border-slate-100">
+        <span className="text-slate-400 font-black uppercase tracking-[0.4em] text-[10px] mb-6 block italic">Custom Compliance Request</span>
+        <Link href="/contact" className="text-slate-950 font-black text-4xl hover:text-green-600 transition-colors tracking-tighter uppercase italic underline underline-offset-[20px] decoration-green-500 decoration-8">
+          Request Test Reports →
         </Link>
       </section>
     </div>
